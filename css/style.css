@@ -1,0 +1,186 @@
+body
+{
+    background-color: var(--black);
+    overflow: hidden;
+}
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999999999;
+    background-color: black;
+}
+.fa-spinner
+{
+    color: var(--white);
+}
+:root
+{
+    --black:#000000f2;
+    --white:#f8f6f6;
+}
+.main-nav
+{
+    width: 250px;
+    position: fixed;
+    z-index: 999;
+
+}
+.icons-nav
+{
+    width: 50px;
+    position: relative;
+    left: -200;
+    background-color: var(--white);
+    
+}
+.slider-nav
+{
+    width:200;
+    position: relative;
+    left: -200;
+    background-color: var(--black);
+    color: var(--white);
+    
+}
+.icn-size
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.linkes
+{
+    padding: 10px 20px ;
+    font-size: 1.1rem;
+    opacity: 0;
+    padding-top: 400px;
+    transition: padding 1s;
+    cursor: pointer;
+    
+    
+    
+    
+    
+}
+.show-meal
+{
+    background-color: rgba(255,255,255,.7);
+    width: 100%;
+    height: 100%;
+
+}
+.show-meal-name
+{
+    top: 100%;
+    transition: all 1s;
+}
+.content:hover .show-meal-name
+{
+    top: 0;
+    opacity: 1;
+
+}
+.input-search
+{
+    padding: 10px;
+    border: none;
+    width: 45%;
+    margin: 0 5px;
+    color: #fff;
+    background-color: var(--black);
+    border-bottom: 2px solid var(--white);
+}
+.btn-source
+{
+    background-color: green;
+    padding: 10px;
+}
+.btn-youtube
+{
+    background-color: red;
+    padding: 10px;
+}
+.fa-city
+{
+    color: #e65a50ab;
+    font-size: 3rem;
+
+}
+.fa-bowl-food
+{
+    color: #9ee650ab;
+    font-size: 3rem;
+}
+.contact-inputs
+{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px #fff solid;
+    background-color: var(--black);
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1);
+    margin-bottom: 5px;
+}
+.btn-contact
+{
+    background-color: transparent;
+    border: 1px red solid;
+    font-weight: lighter;
+    color: red;
+}
+#name:focus
+{
+    border: none;
+    border-bottom: #28a745 1px solid;
+
+}
+.valied
+{
+    
+    border-color: #28a745;
+    padding-right: 2.25rem;
+    background-repeat: no-repeat;
+    background-position: center right calc(2.25rem / 4);
+    background-size: calc(2.25rem / 2) calc(2.25rem / 2);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    
+}
+
+.invalid
+{
+    border-color: #dc3545;
+    padding-right: 2.25rem;
+    background-repeat: no-repeat;
+    background-position: center right calc(2.25rem / 4);
+    background-size: calc(2.25rem / 2) calc(2.25rem / 2);
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+}
+.wrong
+{
+    width: 90%;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 5px;
+   
+}
+.recipes-item
+{
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+.tags
+{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+
+
+

@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>Yummy</title>
+        <link rel="icon" href="images/logo.png">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <nav class="main-nav d-flex h-100 ">
+            <div id="sliderNav" class="slider-nav d-flex flex-column justify-content-between">
+                <ul id="linkes" class=" list-unstyled my-2 py-2  h-50 overflow-hidden">
+                    <li id="linkOne" class="linkes"><a  href="#search"></a>Search</li>
+                    <li id="linkTwo" class="linkes"><a href="#category"></a>Categories</li>
+                    <li id="linkThree" class="linkes"><a href="#area"></a>Area</li>
+                    <li id="linkFour" class="linkes"><a href="#ingredients"></a>Ingredients</li>
+                    <li id="linkFive" class="linkes"><a href="#contact"></a>Contact Us</li>
+                </ul>
+
+                <div>
+                    <div class="mx-3">
+                        <i class="fa-brands fa-facebook-f px-1 text-dark"></i>
+                        <i class="fa-brands fa-twitter px-1 text-dark"></i>
+                        <i class="fa-solid fa-globe px-1 text-dark"></i>
+                    </div>
+                    <p class="mx-3 fs-6 text-muted" >Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            
+            </div>
+
+
+            <div id="iconNav" class="icons-nav d-flex flex-column justify-content-between align-items-center " >
+                <img src="images/logo.png" alt="logo" class="w-75 my-3">
+                <i class="fa-solid fa-align-justify icn-size " id="btnSlider"></i>
+                <div class="d-flex flex-column p-3">
+                    <i class="fa-solid fa-globe py-1 text-black"></i>
+                    <i  class="fa-solid fa-share-nodes py-1 text-black"></i>
+                </div>
+            </div>
+
+
+            
+        </nav>
+        <section id="loading" class=" d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-spinner fa-2x fa-spin"></i>
+
+        </section>
+
+    
+        <section class="p-5" id="homeMeals">
+            <div class=" container w-75">
+                <div class="row" id="rowDataHome">
+                    
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="search" class="d-none" >
+            <div class="container w-75  ">
+                <div class="d-flex justify-content-center ">
+                    <input id="searchByName" type="search" placeholder="Search By Name" class="text-center input-search">
+                    <input id="searchFirstLetter" type="search" placeholder="search By First Letter..." class="text-center input-search" maxlength="1">
+                </div>
+
+                <div class="row p-5" id="rowDataOfSearch">
+                    
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="category" class="d-none">
+            <div class=" container w-75">
+                <div class="row" id="rowDataCategory">
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="area" class="d-none">
+            <div class=" container w-75 p-5">
+                <div  class="row" id="rowDataArea">
+                    
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section id="ingredients" class="d-none">
+            <div class=" container w-75 p-5">
+                <div  class="row" id="rowDataIngredients">
+
+                  
+                    
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="d-none">
+            <div class=" container w-75  text-center p-5">
+                <h2 class="text-white ">ContacUs...</h2>
+                <div class="row text-center" >
+                    
+                    <div class="p-4 m-auto  d-flex flex-wrap justify-content-center align-items-center">
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="text" id="name" placeholder="Enter Your Name" class="  contact-inputs text-white  text-center">
+                        <div class="wrong m-0 d-none"id="wrongName">Special Characters and Numbers not allowed</div>
+                       </div>
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="text" id="email" placeholder="Enter Email" class="text-white  contact-inputs  text-center">
+                        <div class="wrong m-0 d-none" id="wrongMailInput">Enter valid email. *Ex: xxx@yyy.zzz</div>
+                       </div>
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="text" id="phone" placeholder="Enter phone" class="text-white  contact-inputs  text-center">
+                        <div class="wrong m-0 d-none"  id="wrongPhoneInput">Enter valid Phone Number Ex:(20010xxxxxx)</div>
+                       </div>
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="text" id="age" placeholder="Enter Age" class="text-white  contact-inputs  text-center">
+                        <div class="wrong m-0 d-none" id="wrongAgeInput">Enter valid Age</div>
+                       </div>
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="password" id="password" placeholder="Enter Password" class="text-white  contact-inputs  text-center">
+                        <div class="wrong m-0 d-none" id="wrongPasswordInput">Enter valid password *Minimum eight characters, at least one letter and one number:*</div>
+                       </div>
+                       <div class="col-md-6  d-flex flex-column align-items-center">
+                        <input type="password" id="rePassword" placeholder="Enter RePassword" class="text-white  contact-inputs  text-center"> 
+                        <div class="wrong m-0 d-none" id="wrongrePasswordInput" >Enter valid Repassword</div>
+                       </div>
+                        
+                        
+                    </div>
+                
+                </div>
+                <button id="btnSubmit" class="rounded p-2 btn-contact ">Submit</button>
+                
+
+
+            </div>
+        </section>
+
+        <section id="showDetailsMeals" class=" d-none">
+            <div class="container w-75 p-5 text-white">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="" alt="" id="mealIdImag" class="w-100">
+                        <h2 id="strMeal" class="text-center fw-light fs-1 m-auto"></h2>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div>
+                            <h2 class=" fw-lighter">Instructions</h2>
+                            <p id="strInstructions"></p>
+                        </div>
+                        <div>
+                            <h5>Area: <span id="strArea" class="fw-lighter"></span> </h5>
+                            <h5>Category: <span id="strCategory"class="fw-lighter"></span> </h5>
+                        </div>
+                        <div>
+                            <h3>Recipes </h3>
+                            <div class="d-flex flex-wrap" id="recipesRow">
+                                
+                                
+                             
+
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Tags:</h3>
+                            <div class="d-flex">
+                                <div id="strTags" class="tags rounded my-3 p-2"></div>
+                            </div>
+                            <div>
+                                <button class=" btn-source rounded"><a target="_blank" id="strSource" class="  text-white text-decoration-none " href="#">source</a> </button>
+                                <button class=" btn-youtube rounded"><a target="_blank" id="strYoutube" class="  text-white text-decoration-none " href="#">youtube</a> </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="categoryFilter" >
+            <div class=" container w-75">
+                <div class="row" id="rowDataCategoryFilter">
+                    
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section id="areaFilter" class="d-none">
+            <div class=" container w-75 p-5">
+                <div  class="row" id="rowDataAreaFilter">
+                    
+                    
+                </div>
+
+            </div>
+        </section>
+
+
+       
+        <section id="ingredientsFilter" >
+            <div class=" container w-75 p-5">
+                <div  class="row" id="rowDataIngredientsFilter">
+
+                  
+                    
+                    
+                </div>
+
+            </div>
+        </section>
+
+        
+
+
+        <script src="js/jquery-3.6.1.min.js"></script>
+       <script src="js/index.js"></script>
+    </body>
+</html>

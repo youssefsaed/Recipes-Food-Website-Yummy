@@ -127,12 +127,7 @@ body
     outline: none;
 }
 
-#name:focus
-{
-    border: none;
-    border-bottom: #28a745 1px solid;
 
-}
 .valied
 {
     

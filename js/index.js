@@ -508,6 +508,7 @@ $('#linkFive').click(function(){
 const nameInput=document.getElementById('name')
 const wrongNameInput=document.getElementById('wrongName')
 nameInput.addEventListener('keyup',function(){
+    validatInputs()
     if(validatName()==true)
     {
         nameInput.classList.add('valied')
@@ -525,20 +526,15 @@ nameInput.addEventListener('keyup',function(){
 
 function validatName()
 {
-    if(/^[a-zA-Z ]+$/.test(nameInput.value)==true) 
-    {
-        return true
-    }
-    else
-    {
-        return false
-    }
+    return /^[a-zA-Z ]+$/.test(nameInput.value)
+    
 }
 
 //Mail Input Validat
 const wrongMailInput=document.getElementById('wrongMailInput')
 const mailInput=document.getElementById('email')
 mailInput.addEventListener('keyup',function(){
+    validatInputs()
     if(validatMail()==true)
     {
         mailInput.classList.add('valied')
@@ -556,22 +552,15 @@ mailInput.addEventListener('keyup',function(){
 })
 function validatMail()
 {
-   if(/^[a-zA-Z0-9 ]+@(yahoo|gmail)\.com$/.test(mailInput.value)==true)
-   {
-    return true
-   }
-   else
-   {
-    return false
-   }
-   
-
+   return /^[a-zA-Z0-9 ]+@(yahoo|gmail)\.com$/.test(mailInput.value)
+ 
 }
 
 // phone input validat
 const phoneInput=document.getElementById('phone')
 const wrongPhoneInput=document.getElementById('wrongPhoneInput')
 phoneInput.addEventListener('keyup',function(){
+    validatInputs()
     if(validatPhone()==true)
     {
         phoneInput.classList.add('valied')
@@ -590,20 +579,15 @@ phoneInput.addEventListener('keyup',function(){
 function validatPhone()
 {
      
-    if(/^2?01[0125][0-9]{8}$/.test(phoneInput.value)==true)
-    {
-        return true
-    }
-    else
-    {
-        return false
-    }
+    return /^2?01[0125][0-9]{8}$/.test(phoneInput.value)
+  
 }
 //age input validate
 const ageInput=document.getElementById('age')
 const wrongAgeInput=document.getElementById('wrongAgeInput')
 
 ageInput.addEventListener('keyup',function(){
+    validatInputs()
     if(validatAge()==true)
     {
         ageInput.classList.add('valied')
@@ -623,14 +607,8 @@ ageInput.addEventListener('keyup',function(){
 function validatAge()
 {
     
-    if(/^([1-9][0-9]|100)$/.test(ageInput.value)==true)
-    {
-       return true
-    }
-    else
-    {
-       return false
-    }
+    return /^([1-9][0-9]|100)$/.test(ageInput.value)
+   
 }
 
 
@@ -638,6 +616,7 @@ function validatAge()
 const passwordInput=document.getElementById('password')
 const wrongPasswordInput=document.getElementById('wrongPasswordInput')
 passwordInput.addEventListener('keyup',function(){
+    validatInputs()
     if(validatePassword()==true)
     {
         passwordInput.classList.add('valied')
@@ -658,18 +637,13 @@ passwordInput.addEventListener('keyup',function(){
 function validatePassword()
 {
     
-    if(/^[A-Za-z].{7}$/.test(passwordInput.value)==true)
-    {
-        return true
-    }
-    else
-    {
-        return false
-    }
+    return /^[A-Za-z].{7}$/.test(passwordInput.value)
+   
 }
  const rePasswordInput=document.getElementById('rePassword')
  const  wrongrePasswordInput=document.getElementById('wrongrePasswordInput')
  rePasswordInput.addEventListener('keyup',function(){
+     validatInputs()
     if(validatRePassword()==true)
     {
         rePasswordInput.classList.add('valied')
@@ -697,24 +671,22 @@ function validatePassword()
     }
  }
 
+ const btnSubmit=document.getElementById('btnSubmit')
+ function validatInputs()
+ {
+    if(validatName()&&
+    validatMail()&&
+    validatPhone()&&
+    validatAge()&&
+    validatePassword()&&
+    validatRePassword())
+    {
+        btnSubmit.removeAttribute('disabled')
+    }
+    else
+    {
+        btnSubmit.setAttribute('disabled',true)
+    }
+ }
 
-//  const btnSubmit=document.getElementById('btnSubmit')
-//  if((validatName()==true) && (validatMail()==true ) && (validatPhone()==true) && (validatAge()==true) && (validatePassword()==true) && (validatRePassword()==true))
-//  {
-//     console.log('mzbot');
-//     $('#btnSubmit').css('color','blue')
-    
-    // $('#btnSubmit').hover(function () {
-    //         // over
-    //         $('#btnSubmit').css('backgroundColor','red')
-            
-    //     }, function () {
-    //         // out
-    //         $('#btnSubmit').css('backgroundColor','transparent')
-    //     }
-    // );
-//  }
-//  else
-//  {
-//     console.log('mshmzbot');
-//  }
+

@@ -92,6 +92,7 @@ body
     color: #fff;
     background-color: var(--black);
     border-bottom: 2px solid var(--white);
+    outline: none;
 }
 .btn-source
 {
@@ -123,14 +124,9 @@ body
     background-color: var(--black);
     box-shadow: 0 .5rem 1rem rgba(255,255,255,.1);
     margin-bottom: 5px;
+    outline: none;
 }
-.btn-contact
-{
-    background-color: transparent;
-    border: 1px red solid;
-    font-weight: lighter;
-    color: red;
-}
+
 #name:focus
 {
     border: none;
